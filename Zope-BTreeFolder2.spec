@@ -9,7 +9,7 @@ Group:		Development/Tools
 Source0:	http://hathawaymix.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
 # Source0-md5:	14c5904cd5b4fd1f64e89ca489e4e049
 URL:		http://hathawaymix.org/Software/BTreeFolder2/
-BuildRequires:  python
+BuildRequires:	python
 %pyrequires_eq	python-modules
 Requires:	Zope
 Requires(post,postun):	/usr/sbin/installzopeproduct
