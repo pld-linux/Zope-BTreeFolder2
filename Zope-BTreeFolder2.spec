@@ -3,7 +3,7 @@ Summary:	Zope product that acts like a Zope folder but can store many more items
 Summary(pl):	Dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
 Name:		Zope-%{zope_subname}
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	ZPL 2.0
 Group:		Development/Tools
 Source0:	http://hathawaymix.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
