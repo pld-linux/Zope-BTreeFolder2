@@ -4,7 +4,7 @@ Summary:	BTreeFolder2 - a Zope product that acts like a Zope folder but can stor
 Summary(pl):	BTreeFolder2 - dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
 Name:		Zope-%{zope_subname}
 Version:	1.0
-Release:	1
+Release:	2
 License:	ZPL 2.0
 Group:		Development/Tools
 Source0:	http://hathaway.freezope.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
@@ -30,8 +30,7 @@ folderach
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
-# should tests be included or not?
-cp -af tests *.py *.dtml *.gif $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -af tests *.py *.dtml *.gif version.txt $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %py_comp $RPM_BUILD_ROOT%{_datadir}/%{name}
 %py_ocomp $RPM_BUILD_ROOT%{_datadir}/%{name}
