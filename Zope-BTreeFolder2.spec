@@ -5,7 +5,7 @@ Summary(pl):	BTreeFolder2 - dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na fo
 Name:		Zope-%{zope_subname}
 Version:	0.5.0
 Release:	2
-License:	GNU
+License:	ZPL 2.0
 Group:		Development/Tools
 Source0:	http://hathaway.freezope.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
 # Source0-md5:	f301851803326d774d438b35aeb2322d
@@ -26,18 +26,18 @@ BTreeFolder2 jest dodatkiem do Zope rozszerzaj±cym mo¿liwo¶ci pracy na
 folderach
 
 %prep
-%setup -q -c %{zope_subname}-%{version}
+%setup -q -n %{zope_subname}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{product_dir}
-cp -af * $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}
+install -d $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}
+# should tests be included or not?
+cp -af {tests,*.py,*.dtml} $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}
 
 %py_comp $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}
 %py_ocomp $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}
 
 # find $RPM_BUILD_ROOT -type f -name "*.py" -exec rm -rf {} \;;
-rm -rf $RPM_BUILD_ROOT%{product_dir}/%{zope_subname}/*.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,5 +54,5 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc %{zope_subname}/*.txt
+%doc README.txt
 %{product_dir}/%{zope_subname}
