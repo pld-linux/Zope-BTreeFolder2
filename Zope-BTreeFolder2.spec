@@ -1,15 +1,15 @@
 %include	/usr/lib/rpm/macros.python
 %define		zope_subname	BTreeFolder2
-Summary:	BTreeFolder2 - a Zope product that acts like a Zope folder but can store many more items
-Summary(pl):	BTreeFolder2 - dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
+Summary:	Zope product that acts like a Zope folder but can store many more items
+Summary(pl):	Dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
 Name:		Zope-%{zope_subname}
-Version:	1.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	ZPL 2.0
 Group:		Development/Tools
-Source0:	http://hathaway.freezope.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
-# Source0-md5:	d430cf27bfc78922eaca9222f393022f
-URL:		http://hathaway.freezope.org/Software/BTreeFolder2/
+Source0:	http://hathawaymix.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
+# Source0-md5:	14c5904cd5b4fd1f64e89ca489e4e049
+URL:		http://hathawaymix.org/Software/BTreeFolder2/
 %pyrequires_eq	python-modules
 Requires:	Zope
 Requires(post,postun):	/usr/sbin/installzopeproduct
@@ -22,7 +22,7 @@ store many more items.
 
 %description -l pl
 BTreeFolder2 jest dodatkiem do Zope rozszerzaj±cym mo¿liwo¶ci pracy na
-folderach
+folderach.
 
 %prep
 %setup -q -n %{zope_subname}
