@@ -3,12 +3,12 @@
 Summary:	BTreeFolder2 - a Zope product that acts like a Zope folder but can store many more items
 Summary(pl):	BTreeFolder2 - dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
 Name:		Zope-%{zope_subname}
-Version:	0.5.0
-Release:	2
+Version:	1.0
+Release:	1
 License:	ZPL 2.0
 Group:		Development/Tools
 Source0:	http://hathaway.freezope.org/Software/%{zope_subname}/%{zope_subname}-%{version}.tar.gz
-# Source0-md5:	f301851803326d774d438b35aeb2322d
+# Source0-md5:	d430cf27bfc78922eaca9222f393022f
 URL:		http://hathaway.freezope.org/Software/BTreeFolder2/
 %pyrequires_eq	python-modules
 Requires:	Zope
