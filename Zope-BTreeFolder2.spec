@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 %define		zope_subname	BTreeFolder2
 Summary:	Zope product that acts like a Zope folder but can store many more items
 Summary(pl):	Dodatek do Zope rozszerzaj±cy mo¿liwo¶ci pracy na folderach
