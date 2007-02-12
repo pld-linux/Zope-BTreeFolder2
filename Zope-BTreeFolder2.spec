@@ -1,6 +1,6 @@
 %define		zope_subname	BTreeFolder2
 Summary:	Zope product that acts like a Zope folder but can store many more items
-Summary(pl):	Dodatek do Zope rozszerzaj±cy moøliwo∂ci pracy na folderach
+Summary(pl.UTF-8):   Dodatek do Zope rozszerzajƒÖcy mo≈ºliwo≈õci pracy na folderach
 Name:		Zope-%{zope_subname}
 Version:	1.0.2
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BTreeFolder2 is a Zope product that acts like a Zope folder but can
 store many more items.
 
-%description -l pl
-BTreeFolder2 jest dodatkiem do Zope rozszerzaj±cym moøliwo∂ci pracy na
+%description -l pl.UTF-8
+BTreeFolder2 jest dodatkiem do Zope rozszerzajƒÖcym mo≈ºliwo≈õci pracy na
 folderach.
 
 %prep
