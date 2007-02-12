@@ -1,6 +1,6 @@
 %define		zope_subname	BTreeFolder2
 Summary:	Zope product that acts like a Zope folder but can store many more items
-Summary(pl.UTF-8):   Dodatek do Zope rozszerzający możliwości pracy na folderach
+Summary(pl.UTF-8):	Dodatek do Zope rozszerzający możliwości pracy na folderach
 Name:		Zope-%{zope_subname}
 Version:	1.0.2
 Release:	1
